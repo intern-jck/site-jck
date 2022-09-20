@@ -1,4 +1,26 @@
+/* For page wide styling only */
+
+:root {
+  --background-color: black;
+  --primary-color:  rgb(32, 206, 49);
+  --secondary-color: white;
+  --active-color: blue;
+  /* --site-font: Cour */
+
+}
+
 body {
-  margin: 0;
   font-size: 100%;
+  /* font-family: var(--site-font); */
+  font-family:'Courier New', Courier, monospace;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+.onclick:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
 }

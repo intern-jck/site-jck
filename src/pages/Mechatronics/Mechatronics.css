@@ -1,0 +1,32 @@
+.Mechatronics {
+  margin-left: 6em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.mechatronics-content {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+@media screen and (orientation:landscape) and (max-width: 1024px){
+  .Mechatronics {
+    margin-top: 5em;
+    margin-left: 0;
+  }
+}
+
+@media screen and (orientation:portrait) {
+  .Mechatronics {
+    margin-top: 5em;
+    margin-left: 0;
+  }
+}
