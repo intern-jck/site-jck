@@ -1,9 +1,9 @@
 .Navbar {
-  border: 4px solid grey;
+  border: 4px solid darkgrey;
   background-color: black;
-  box-sizing: border-box;
+  padding: 1em;
   width: 100%;
-  height: fit-content;
+  /* height: 12vh; */
   position: fixed;
   top: 0;
   left: 0;
@@ -12,17 +12,55 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .NavBrand {
+  /* border: 4px solid orange; */
   margin-left: 1vw;
   width: 25%;
 }
-
 .NavBrand a {
   text-decoration: none;
   color: var(--primary-color);
-  font-size: 4em;
+  font-size: 3em;
   font-weight: bold;
+}
+
+.NavMenu {
+  /* border: 4px solid blue; */
+  width: fit-content;
+  /* margin-top: 14vh; */
+}
+.NavMenu ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+.NavMenu a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 2em;
+}
+
+
+
+.NavMenuCollapse {
+  /* border: 4px solid orange; */
+  /* background-color: black; */
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: baseline; */
+}
+
+.nav-collapse-header {
+  /* border: 4px solid blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .nav-ham-btn {
@@ -32,47 +70,8 @@
   width: fit-content;
 }
 
-.NavMenuCollapse {
-  /* border: 4px solid orange; */
-  background-color: black;
-  box-sizing: border-box;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-collapse-header {
-  /* border: 4px solid blue; */
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.NavMenu {
-  width: fit-content;
-  margin-top: 4vh;
-}
-
-.NavMenu ul {
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
-}
-
-.NavMenu a{
-  text-decoration: none;
-  color: var(--primary-color);
-  font-size: 2em;
-}
-
-.NavHome {
-  color: var(--primary-color);
-}
-
 .NavSocial {
+  /* border: 4px solid red; */
   margin-right: 1vw;
   width: 25%;
   display: flex;
@@ -87,35 +86,28 @@
   color: var(--primary-color);
 }
 
-@media screen and (orientation:landscape) and (max-width: 1024px){
-
-  .NavMenuCollapse button {
-    margin-left: 1vw;
-  }
-
-  .nav-bar-container {
-    justify-content: center;
-  }
-
-  .NavMenu{
-    border: 4px solid black;
-  }
+@media screen and (orientation:landscape) and (max-width: 1400px){
 
   .NavMenu ul {
-    margin-left: 1vw;
-    flex-direction: column;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
   }
+
+
 }
 
 @media screen and (orientation:portrait) {
 
-  .NavMenu{
-    border: 4px solid black;
-    width: 100%;
-  }
-
   .NavMenu ul {
-    margin-left: 1vw;
     flex-direction: column;
   }
+
+  .NavSocial {
+    /* margin-right: 1vw; */
+    width: fit-content;
+  }
+
 }

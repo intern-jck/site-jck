@@ -5,7 +5,18 @@ import NavSocial from './NavComponents/NavSocial.jsx';
 import NavMenuCollapse from './NavComponents/NavMenuCollapse.jsx';
 
 import './Navbar.css';
+
 import useWindowSize from '../../hooks/WindowContext/useWindowSize.js';
+
+const NAV_MENU_LINKS = [
+  ['Home', '/'],
+  ['Mechatronics', 'mecha'],
+  ['Photos', 'photos'],
+  ['Code', 'code'],
+  ['Contact', 'contact'],
+  // ['R&D', 'randd'],
+  // ['About', 'about'],
+]
 
 const Navbar = () => {
   const {width, height, orientation} = useWindowSize();
@@ -15,10 +26,10 @@ const Navbar = () => {
         width > 1400 ?
           <>
             <NavBrand brandName={'JCK'} brandLink={'/'} />
-            <NavMenu />
+            <NavMenu items={NAV_MENU_LINKS} />
             <NavSocial />
           </> :
-          <NavMenuCollapse />
+          <NavMenuCollapse items={NAV_MENU_LINKS} />
       }
     </div>
   );

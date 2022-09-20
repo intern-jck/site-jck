@@ -5,7 +5,7 @@ import NavSocial from './NavSocial.jsx';
 
 import {GiHamburgerMenu, GoX} from 'react-icons/gi';
 
-const NavMenuCollapse = () => {
+const NavMenuCollapse = ({items}) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -14,20 +14,24 @@ const NavMenuCollapse = () => {
 
   return (
     <div className='NavMenuCollapse'>
+
       <div className='nav-collapse-header'>
         <button className='nav-ham-btn' onClick={toggleMenu}>
-          <GiHamburgerMenu size={60}
+          <GiHamburgerMenu
+            size={60}
             style={showMenu ?
             {transform: 'rotate(90deg)'} : {transform: 'rotate(0deg)'}} />
         </button>
         <NavSocial />
       </div>
+
       {
         showMenu ?
         <>
-          <NavMenu />
+          <NavMenu items={items}/>
         </> : null
       }
+
     </div>
   );
 };

@@ -45,14 +45,17 @@ const App = () => {
       <WindowProvider>
         <Navbar />
       </WindowProvider>
-      <Routes>
-        <Route index element={<Home />}/>
-        <Route path='/mecha' element={ <Mechatronics data={mechaData}/> } />
-        <Route path='/photos' element={ <Photos data={photoData}/> } />
-        <Route path='/code' element={<Code data={codeData}/>}/>
-        <Route path='/contact' element={<Contact />}/>
-        <Route path='/*' element={<h1>404 Not Found!</h1>}/>
-      </Routes>
+
+      <div className='App'>
+        <Routes>
+          <Route index element={<Home />}/>
+          <Route path='/mecha' element={ <Mechatronics data={mechaData}/> } />
+          <Route path='/photos' element={ <Photos data={photoData}/> } />
+          <Route path='/code' element={<Code data={codeData}/>}/>
+          <Route path='/contact' element={<Contact />}/>
+          <Route path='/*' element={<h1>404 Not Found!</h1>}/>
+        </Routes>
+      </div>
     </>
   );
 };

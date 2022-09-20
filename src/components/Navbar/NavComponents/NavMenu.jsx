@@ -1,36 +1,20 @@
 import React, {useState, useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
-import {GiHamburgerMenu, GoX} from 'react-icons/gi';
 
-const NavMenu = () => {
+const NavMenu = ({items}) => {
+  console.log(items)
   return (
     <div className='NavMenu'>
       <ul>
-        <li>
-          <NavLink to='/'>
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to='mecha'>
-            Mechatronics
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to='photos'>
-            Photos
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to='code'>
-            Code
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to='contact'>
-            Contact
-          </NavLink>
-        </li>
+        {
+          items.map((link, i) => (
+            <li key={i}>
+              <NavLink to={link[1]}>
+                {link[0]}
+              </NavLink>
+            </li>
+          ))
+        }
       </ul>
     </div>
   );
