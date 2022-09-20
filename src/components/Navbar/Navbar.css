@@ -1,56 +1,121 @@
 .Navbar {
   border: 4px solid grey;
-  z-index: 1;
+  background-color: black;
+  box-sizing: border-box;
   width: 100%;
-  height: 10vh;
+  height: fit-content;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   flex-direction: row;
-  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.nav-activity-bar {
-  border: 4px solid grey;
+.NavBrand {
+  margin-left: 1vw;
+  width: 25%;
+}
+
+.NavBrand a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.nav-ham-btn {
+  border: 4px solid black;
   background-color: black;
-  padding: 0;
-  margin: 0;
+  color: var(--primary-color);
+  width: fit-content;
+}
+
+.NavMenuCollapse {
+  /* border: 4px solid orange; */
+  background-color: black;
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.nav-collapse-header {
+  /* border: 4px solid blue; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.NavMenu {
+  width: fit-content;
+  margin-top: 4vh;
+}
+
+.NavMenu ul {
+  padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
 }
 
-.nav-activity-bar button{
-  border: 2px solid black;
-  background-color: black;
+.NavMenu a{
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 2em;
 }
 
-.nav-icons {
-  color: green;
+.NavHome {
+  color: var(--primary-color);
+}
+
+.NavSocial {
+  margin-right: 1vw;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 2em;
+}
+
+.NavSocial a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 @media screen and (orientation:landscape) and (max-width: 1024px){
-  .Navbar {
-    flex-direction: column;
-    width: 100%;
-    height: fit-content;
+
+  .NavMenuCollapse button {
+    margin-left: 1vw;
   }
 
-  .nav-activity-bar {
-    flex-direction: row;
+  .nav-bar-container {
+    justify-content: center;
+  }
+
+  .NavMenu{
+    border: 4px solid black;
+  }
+
+  .NavMenu ul {
+    margin-left: 1vw;
+    flex-direction: column;
   }
 }
 
 @media screen and (orientation:portrait) {
-  .Navbar {
-    flex-direction: column;
+
+  .NavMenu{
+    border: 4px solid black;
     width: 100%;
-    height: fit-content;
   }
 
-  .nav-activity-bar {
-    flex-direction: row;
+  .NavMenu ul {
+    margin-left: 1vw;
+    flex-direction: column;
   }
 }
