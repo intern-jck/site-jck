@@ -29,10 +29,16 @@ a {
   color: var(--primary-color);
 }
 
-button:hover {
-  cursor: pointer;
+a:hover {
+  text-decoration: none;
+  color: var(--active-color);
 }
 
+button:hover {
+  cursor: pointer;
+  color: var(--active-color);
+  border-color: var(--active-color);
+}
 
 .onclick:hover {
   cursor: pointer;

@@ -40,7 +40,7 @@
 }
 
 .mecha-client-url a {
-  color: blue;
+  color: var(--primary-color);
 }
 
 @media screen and (orientation:landscape) and (max-width: 1024px){
