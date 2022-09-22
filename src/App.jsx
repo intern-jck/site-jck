@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {Routes, Route} from 'react-router-dom';
 import axios from 'axios';
-import Navbar from './components/Navbar/Navbar.jsx';
+import Navbar from './nav/Navbar.jsx';
+
 import Home from './pages/Home/Home.jsx';
 import Mechatronics from './pages/Mechatronics/Mechatronics.jsx';
 import Photos from './pages/Photos/Photos.jsx';

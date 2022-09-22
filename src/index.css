@@ -1,26 +1,40 @@
 /* For page wide styling only */
-
 :root {
+  --nav-margin: 12vh;
   --background-color: black;
   --primary-color:  rgb(32, 206, 49);
   --secondary-color: white;
   --active-color: blue;
-  /* --site-font: Cour */
+}
 
+/* Base */
+/* Use border box for everything.
+  Makes it easier to style things when using borders. */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
   font-size: 100%;
-  /* font-family: var(--site-font); */
   font-family:'Courier New', Courier, monospace;
   background-color: var(--background-color);
   color: var(--primary-color);
 }
 
-.onclick:hover {
-  cursor: pointer;
+a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 button:hover {
   cursor: pointer;
 }
+
+
+.onclick:hover {
+  cursor: pointer;
+}
+
