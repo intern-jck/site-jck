@@ -1,13 +1,19 @@
 import React, {useState, useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
 
-const NavMenu = ({items}) => {
-  console.log(items)
+const MENU_ITEMs = [
+  ['Mechatronics', '/mecha'],
+  ['Photos', '/photos'],
+  ['Code', '/code'],
+  ['Contact', '/contact'],
+];
+
+const NavMenu = () => {
   return (
     <div className='NavMenu'>
       <ul>
         {
-          items.map((link, i) => (
+          MENU_ITEMs.map((link, i) => (
             <li key={i}>
               <NavLink to={link[1]}>
                 {link[0]}
