@@ -17,7 +17,8 @@ const NavCollapse = () => {
 
       <div className='nav-collapse-header'>
         <button className='nav-ham-btn' onClick={toggleMenu}>
-          <GiHamburgerMenu size={60}
+          <GiHamburgerMenu
+            size={60}
             style={showMenu ?
             {transform: 'rotate(90deg)'} : {transform: 'rotate(0deg)'}} />
         </button>
@@ -30,6 +31,7 @@ const NavCollapse = () => {
           <NavMenu />
         </div> : null
       }
+
     </div>
   );
 };
