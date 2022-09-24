@@ -13,3 +13,4 @@ TODO:
 * Add Bio page
 * Add more mechatronics and code projects
 * Create a template based on this page for future use
+* Optimize app for production
