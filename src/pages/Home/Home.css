@@ -1,5 +1,4 @@
 .Home {
-  margin-left: 6em;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -9,7 +8,6 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   box-sizing: border-box;
 }

@@ -44,3 +44,6 @@ button:hover {
   cursor: pointer;
 }
 
+.page-header {
+  font-size: xxx-large;
+}

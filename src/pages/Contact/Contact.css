@@ -3,6 +3,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* font-size: xx-large; */
+}
+
+.Contact h2 {
+  font-size: xx-large;
 }
 
 .contact-icons {
@@ -13,7 +18,7 @@
 
 .contact-img {
   width: 40vw;
-  height: 40vw;
+  height: 40vh;
 }
 
 .contact-img img {
@@ -22,24 +27,7 @@
   height: 100%;
 }
 
-@media screen and (orientation:landscape) and (max-width: 1024px){
-  .Contact {
-    margin-top: 5em;
-    margin-left: 0;
-  }
-  .contact-img {
-    width: 90vw;
-    height: 40vw;
-  }
-}
-
-@media screen and (orientation:portrait) {
-  .Contact {
-    margin-top: 5em;
-    margin-left: 0;
-  }
-  .contact-img {
-    width: 100vw;
-    height: 60vw;
-  }
+.contact-email {
+  margin-top: 1em;
+  font-size: xx-large;
 }

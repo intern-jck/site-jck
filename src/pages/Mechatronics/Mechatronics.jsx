@@ -29,7 +29,7 @@ const Mechatronics = ({data}) => {
 
   return (
     <div className='Mechatronics'>
-      <h1>Mechatronics</h1>
+      <h1 className='page-header'>Mechatronics</h1>
       <div className="mechatronics-content">
         {
           view === 'List' && data ?

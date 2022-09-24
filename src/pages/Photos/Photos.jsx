@@ -24,7 +24,7 @@ const Photos = ({data}) => {
 
   return (
     <div className='Photos'>
-      <h1>Photos</h1>
+      <h1 className='page-header'>Photos</h1>
       <p>{`Places I've been, sights I've seen, and everything inbetween`}</p>
       {
         view === 'List' && data ?

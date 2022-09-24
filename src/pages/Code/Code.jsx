@@ -30,7 +30,7 @@ const Code = ({data}) => {
 
   return (
     <div className='Code'>
-      <h1>Code</h1>
+      <h1 className='page-header'>Code</h1>
       <div className="code-content">
         {
           view === 'List' && data ?

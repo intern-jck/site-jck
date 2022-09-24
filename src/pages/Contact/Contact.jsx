@@ -1,14 +1,19 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import {FaGithub, FaLinkedin, FaInstagram} from 'react-icons/fa';
 import './Contact.css';
+import NavSocial from '../../nav/NavComponents/NavSocial.jsx';
 
 const contactImgUrl = 'https://iili.io/6KwZwG.jpg';
 
 const Contact = () => {
   return (
     <div className='Contact'>
-      <h1>Contact</h1>
-      <h2>Get in touch via social</h2>
+      <h1 className='page-header'>Contact</h1>
+      <div className='contact-img'>
+        <img src={contactImgUrl} />
+      </div>
+      <h2>Social</h2>
       <div className='contact-icons'>
         <a href='https://github.com/intern-jck' target='_blank' rel='noreferrer'>
           <FaGithub className='nav-icons' size={60}/>
@@ -20,8 +25,12 @@ const Contact = () => {
           <FaInstagram className='nav-icons' size={60}/>
         </a>
       </div>
-      <div className='contact-img'>
-        <img src={contactImgUrl} />
+      <div className='contact-email'>
+        <Link
+          to='#'
+          onClick={() => window.location = 'mailto:justin.c.kirk@gmail.com'}>
+          Click here to send me an e-mail!
+        </Link>
       </div>
     </div>
   );
