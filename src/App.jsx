@@ -7,6 +7,7 @@ import Home from './pages/Home/Home.jsx';
 import Mechatronics from './pages/Mechatronics/Mechatronics.jsx';
 import Photos from './pages/Photos/Photos.jsx';
 import Code from './pages/Code/Code.jsx';
+import Music from './pages/Music/Music.jsx';
 import Contact from './pages/Contact/Contact.jsx';
 import './App.css';
 
@@ -53,6 +54,7 @@ const App = () => {
           <Route path='/mecha' element={ <Mechatronics data={mechaData}/> } />
           <Route path='/photos' element={ <Photos data={photoData}/> } />
           <Route path='/code' element={<Code data={codeData}/>}/>
+          <Route path='/music' element={ <Music data={''}/> } />
           <Route path='/contact' element={<Contact />}/>
           <Route path='/*' element={<h1>404 Not Found!</h1>}/>
         </Routes>

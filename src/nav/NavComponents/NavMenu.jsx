@@ -5,6 +5,7 @@ const MENU_ITEMs = [
   ['Mechatronics', '/mecha'],
   ['Photos', '/photos'],
   ['Code', '/code'],
+  // ['Music', '/music'],
   ['Contact', '/contact'],
 ];
 
